@@ -1,0 +1,23 @@
+program test is
+string s;
+string s1;
+integer tmp;
+string function foo( string send)
+begin
+if(send=="test")then
+foo:="yes";
+else
+foo:="no";
+end if
+end function
+begin
+s:="test1";
+s1:=foo(s);
+tmp:=putString(s1);
+
+
+s:="test";
+s1:=foo(s);
+tmp:=putString(s1);
+
+end program
